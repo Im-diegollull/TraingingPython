@@ -45,7 +45,7 @@ print(no_es_palabra)
 #palabra.isdigit() si la palabra es digito
 
 #1.palabra.find() palabra que quieres buscar uwu
-#2.in
+#2.palabra.count() cuantas veces aparece la palabra
 
 #1
 """

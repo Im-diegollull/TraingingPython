@@ -30,6 +30,14 @@ print("La divison entera es: ", divisionEntera)
 
 #OPERADORES RELACIONALES:
 
+#igual que
+igualQue = 1 == 2
+print("El resultado de la comparacion es: ", igualQue)
+
+#diferente que
+diferenteQue = 1 != 2
+print("El resultado de la comparacion es: ", diferenteQue)
+
 #mayor que
 mayorQue = 1>2
 print("El mayor que es: ", mayorQue)
@@ -47,5 +55,22 @@ menorIgualQue = 1<=2
 print("El menor igual que es: ", menorIgualQue)
 
 
-#########################
+####################
+#OPERADORES LOGICOS:
+
+#and
+#solo se vacunan gente de 18 a 30 años
+edad =20
+es_valido = edad>=18 and edad<=30
+print(es_valido)
+
+#or
+#solo se vacunan gente de 18 o 30 años
+edad =18
+es_valido = edad==18 or edad==30
+print(es_valido)
+
+#not
+operacion = not (2 < 5)
+print(operacion)
 
