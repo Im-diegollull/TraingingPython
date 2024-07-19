@@ -107,3 +107,5 @@ elif lado1==lado2 and lado1!=lado3 or lado1!=lado2 and lado2==lado3:
 else:
     print("Es un triangulo escaleno")
 """""
+num = 4 + 5*4%3
+

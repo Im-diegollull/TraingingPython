@@ -66,8 +66,44 @@ for letra in palabra:
      
 '''
 #ejercicio4
+'''
+Imrimir las tablas de mult hasta su mismo numero
 
 num = int(input('dame un numero: '))
-for mult in range(0,13):
-    print(f"La table del {num}")
-    print(num,'x',mult,'=',num*mult)
+print(f"La tabla del {num}")
+for mult in range(0,num+1):
+    print(f"{num} x {mult} = {num*mult}")
+'''
+#ejercicio5
+'''
+imprimir las tambals de mult hasta que 
+
+
+num = int(input('dame un numero: '))
+print(f"La tabla del {num}")
+for mult in range(0,num+1):
+    for j in range(0,12+1):
+        print(f"{mult} x {j} = {num*j}")
+    print("+++++++++++++++")
+'''
+
+#Break y continue
+
+#ejercicio1
+'''
+for i in range(1,11):
+    if i == 5:
+        break
+    print(i)
+'''
+#ejercicio2
+'''
+for i in range(1,11):
+    if i == 5:
+        continue
+    print(i)
+'''
+i = 1
+while i < 100:
+    print(i)
+    i = i*2
