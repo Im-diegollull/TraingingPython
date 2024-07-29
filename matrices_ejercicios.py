@@ -60,20 +60,26 @@ dada una matriz de la misma cantidad de filas que de columnas
 compuesta por solo 1´s. Dibuja una cruz(x) que cruz por
 el centro de la matriz 
 '''
-def dibuja_cruz(matriz):
-    for i in range(len(matriz)):
-        for j in range(len(matriz[i])):
-            if matriz[:i] == matriz[:j]:
-                print('0', end=' ')
-            elif matriz[i:]== matriz[-j]:
-                print('0', end=' ')
-            
-            else:
-                print('1', end=' ')
-            
-        print()
-  
+def dibuja_x(matriz):
+    n = len(matriz)  #
     
-dibuja_cruz([[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]])
+    for i in range(n):
+        for j in range(n):
+          
+            if i == j or i + j == n - 1:
+                print('0', end='')
+            else:
+                print('1', end='')
+        print()  
 
-     
+# Ejemplo de uso
+dibuja_x([[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]])
+
+
+#Ejercicio 5:
+
+
+# 0,0 0,1 0,2 0,3    3,0 2,1 1,2 0,3
+# 1,0 1,1 1,2 1,3
+# 2,0 2,1 2,2 2,3
+# 3,0 3,1 3,2 3,3
