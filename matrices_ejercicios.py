@@ -59,7 +59,7 @@ Crea una funcion  llamadas dibuja curz
 dada una matriz de la misma cantidad de filas que de columnas 
 compuesta por solo 1´s. Dibuja una cruz(x) que cruz por
 el centro de la matriz 
-'''
+
 def dibuja_x(matriz):
     n = len(matriz)  #
     
@@ -74,12 +74,40 @@ def dibuja_x(matriz):
 
 # Ejemplo de uso
 dibuja_x([[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]])
-
+'''
 
 #Ejercicio 5:
+'''
+Dado a una matriz y dos numeros i y j
+crea una funcion llmada conquista() que conquiste
+las celadas alrededor del elemento matriz[i][j].
+Se dice que una posicion ha sido conquistada si las
+celdas adyacentes(de alrededor)
+reutuliza la funcion imprime matriz
 
+def imprime_matriz(matriz):
+    for fila in matriz:
+        for num in fila:
+            print(num, end =' ')
+        print()
 
-# 0,0 0,1 0,2 0,3    3,0 2,1 1,2 0,3
-# 1,0 1,1 1,2 1,3
-# 2,0 2,1 2,2 2,3
-# 3,0 3,1 3,2 3,3
+def conquista(i, j, matriz):
+    n = len(matriz)
+    # Conquista las celdas adyacentes
+    for x in range(max(0, i-1), min(n, i+2)):
+        for y in range(max(0, j-1), min(n, j+2)):
+            if (x, y) != (i, j):  
+                matriz[x][y] = 1
+    imprime_matriz(matriz)
+matriz = [[0,0,0,0],
+          [0,0,0,0],
+          [0,0,0,0],
+          [0,0,0,0]]
+conquista(1,1,matriz)  #
+'''
+
+matriz = []
+for i in range(N):  
+    matriz.append([])  
+    for j in range(N):    
+        matriz[i].append(0)
