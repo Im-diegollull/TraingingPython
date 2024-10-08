@@ -85,3 +85,14 @@ palabra = palabra.lower()
 
 print(palabra)
 """
+
+#ultimas dos letras de una palabra
+#ejemplo (samurai, ai)
+def solution(text, ending):
+    return text.endswith(ending)
+print(solution("samurai",'ai'))
+
+
+
+    
+   

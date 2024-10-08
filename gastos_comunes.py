@@ -7,6 +7,7 @@ gas = float(input("CUANTO SALIÓ EL GAS: "))
 
 # Format agua value to 3 decimal places
 agua_ = f"{agua:.3f}"
+gas_ = f"{gas:.3f}"
 
 # Calculate total
 total = luz + agua + gc + wifi + gas
@@ -22,6 +23,6 @@ print(f"LUZ SALIÓ = {luz}")
 print(f"AGUA SALIÓ = {agua_}")
 print(f"Gastos Comunes Salieron = {gc}")
 print(f"Wifi SALIÓ = {wifi}")
-print(f"GAS SALIOÓ = {gas}")
+print(f"GAS SALIÓ = {gas_}")
 print(f"Total = {total_}")
 print(f"C/U DEBE = {deuda}")
