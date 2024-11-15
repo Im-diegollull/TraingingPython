@@ -19,6 +19,7 @@ def marcador(jugador1, jugador2, sets_jugador1, sets_jugador2, juegos_jugador1, 
         # Mostrar puntos estándar (0, 15, 30, 40)
         print(f"Puntos: {puntos_visibles[puntos_jugador1]} - {puntos_visibles[puntos_jugador2]}")
 
+
 def main():
     # Solicitar nombres de los jugadores
     jugador1 = input("Ingrese el nombre del jugador 1: ")
@@ -113,3 +114,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
