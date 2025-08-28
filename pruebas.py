@@ -1,6 +1,4 @@
-import random
-#create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) # => returns "(123) 456-7890"
-def create_phone_number(n):
-    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
-
-    
+#un ciclo while que corra un millon de veces 
+i = 1
+while i < 1000000:
+    i += 1
